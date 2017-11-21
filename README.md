@@ -22,3 +22,19 @@ Problems to Solve:
 		Maps the input digit, ex. ‘a’ to its corresponding letter ex. ‘1’
 		Use a for loop to go through each letter in the trigram and multiply by appropriate 27^x number
 		Ex. aaa = 27x^3*1 + 27x^2*1 + 27x *1, then output this value
+5.Creates a DATA_FREQ class takes a set of data and outputs trigram frequency vector
+	a.Uses the DATA_to_TRIG, TRIG_to_FREQ functions
+6.Separate and runs the test and Training Data
+	a.Creates a function that returns nothing called TEST_vs_TRAIN
+	b.Has an if statement that splits the test data from the training data
+	The training data is run through the DATA_FREQ class 
+	The test data is also run through the DATA_FREQ class
+	Each result of the training data is compared to the 
+		test data using the SIM function (listed below) then, 
+		the resulting float is put into a vector along with the name of the training data
+7.Create a SIM function
+	a.Takes two vectors and outputs an float between 0 and 1
+	b.Uses the cosine similarity function included in the packet
+8.Compare Similar Values
+	a.Creates a new function called SORT_SIM that finds the highest number in the list of training data and then outputs the name of that language
+
