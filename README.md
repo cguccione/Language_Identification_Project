@@ -41,6 +41,8 @@ Problems to Solve:
 Files to Create:
 1.Need to download all the training data and create appropriate files named after that language
 2.Need to download the  test file containing the mystery language
+3.Create a data_freq.cpp file for the class
+4.Create a maine.cpp file for the rest of the code
 
 Main() Structure for Milestone 1:
 1.Apply both error catching functions: ERROR_CATCHING and ERROR_CATCHING2
@@ -53,3 +55,15 @@ Main() Structure for Milestone 2:
 2.Apply the TEST_vs_TRAIN function
 3.Apply the SIM function
 4.Apply this SORT_SIM function
+
+Libraries Needed:
+#include <string>
+#include <fstream>
+#include <iostream>
+#include <cstdlib>
+#include <vector>
+
+File Compile Script Will Compile:
+main.cpp 
+data_freq.cpp
+
