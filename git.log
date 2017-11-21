@@ -1,0 +1,45 @@
+commit 3a25c1a03b9cc55108cba5f8a896d431b705833f
+Author: Caitlin Guccione <cguccione1@gmail.com>
+Date:   Mon Nov 20 23:10:54 2017 -0500
+
+    Added libraries and compile detals to Desgin Doucment
+    
+    Added compile details along with final touch ups of desgin document.
+
+commit cc0db10bacbdc206930426ef96d52e7824deb8e6
+Author: Caitlin Guccione <cguccione1@gmail.com>
+Date:   Mon Nov 20 22:56:30 2017 -0500
+
+    Added file and Milestone description
+    
+    Provided details on what will be included in the main() function for milestone 1 and 2
+
+commit 8979dc40252362bbc1d91cf46f0f97618c24c7a4
+Author: Caitlin Guccione <cguccione1@gmail.com>
+Date:   Mon Nov 20 22:37:34 2017 -0500
+
+    Added classes and a SIM function
+    
+    New class and function allow the test and training data to be run efficiently and then compared to identify the correct language.
+
+commit ae8b65870f38612a471f0c1185f71779a3a21de2
+Author: Caitlin Guccione <cguccione1@gmail.com>
+Date:   Mon Nov 20 22:10:03 2017 -0500
+
+    Added Trigram Functions to Desgin Document
+    
+    Added a Data to Trigrams and a Trigrams to Frequency function.
+
+commit f8417a4bbc28a90ed218c260d4621154bf43d94f
+Author: Caitlin Guccione <cguccione1@gmail.com>
+Date:   Mon Nov 20 20:48:29 2017 -0500
+
+    Added Error Correcting to Desgin Document
+    
+    Took into account both the command line and the diffrenet characters that could cause errors later in the program.
+
+commit 7b95910cffa776751bbd330ffe0fca305f22fe76
+Author: Caitlin Guccione <cguccione1@gmail.com>
+Date:   Mon Nov 20 11:29:29 2017 -0500
+
+    Initial commit
