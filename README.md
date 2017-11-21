@@ -38,3 +38,18 @@ Problems to Solve:
 8.Compare Similar Values
 	a.Creates a new function called SORT_SIM that finds the highest number in the list of training data and then outputs the name of that language
 
+Files to Create:
+1.Need to download all the training data and create appropriate files named after that language
+2.Need to download the  test file containing the mystery language
+
+Main() Structure for Milestone 1:
+1.Apply both error catching functions: ERROR_CATCHING and ERROR_CATCHING2
+2.Creates a similar class to one listed above which uses the DATA_to_TRIG and TRIG_to_FREQ functions
+3.This data is then being placed into a vector that lines up with the order listed on the grade sheet
+
+Main() Structure for Milestone 2:
+1.Apply everything from Milestone 1, except edit the class so 
+	that is like the one in the original outline not the one from Milestone 1
+2.Apply the TEST_vs_TRAIN function
+3.Apply the SIM function
+4.Apply this SORT_SIM function
