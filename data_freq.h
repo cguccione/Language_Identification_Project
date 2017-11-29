@@ -42,8 +42,8 @@ public:
 	std::vector<std::string> dataTrig();
 	
 	/*
-	Take the vector of strings trigram strings and the outputs their frequencies in 
-	a list of strings	
+	Take the vector of trigram strings and the outputs their frequencies in 
+	a strings	
 	*/
 	std::string trigFreq();
 
