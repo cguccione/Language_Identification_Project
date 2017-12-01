@@ -29,7 +29,7 @@ std::string DF::getData(){
 /*Splits the data into all trigram possiblities and then outputs them into a vector*/
 std::vector<std::string> DF::dataTrig(){
 	std::vector<std::string> tri_vec;
-	std::string temp;i
+	std::string temp;
 	//Breaks the data into sets of three or trigrams and then adds these to tri_vec
 	for (int x=0; x<=(((int)(data.length())-3)); x++){
 		temp="";
