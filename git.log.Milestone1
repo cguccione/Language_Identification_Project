@@ -1,0 +1,149 @@
+commit 146a5d3729d236aa8bfbb4116cf7b72f472b05ef
+Author: Caitlin Guccione <cguccione1@gmail.com>
+Date:   Fri Dec 1 10:37:30 2017 -0500
+
+    Added comments
+    
+    Added final comments and clarity to documents
+
+commit 787d7ab7225d02075bb28031668e158a5bd602c8
+Author: Caitlin Guccione <cguccione1@gmail.com>
+Date:   Fri Dec 1 10:09:35 2017 -0500
+
+    Added frequencies file
+    
+    Binary file that is produced after compiling.
+
+commit 00ec6d3b0b72e37af38181cc4e3392859bc65740
+Author: Caitlin Guccione <cguccione1@gmail.com>
+Date:   Fri Dec 1 10:07:35 2017 -0500
+
+    Added spaces
+    
+    Added spaces in output between each number and converted count to a string.
+
+commit b4b6b0b2da41dc28e0d40a32e51f62c103f0587c
+Author: Caitlin Guccione <cguccione1@gmail.com>
+Date:   Fri Dec 1 10:06:25 2017 -0500
+
+    Corrected adding elements to vectors
+    
+    Add elements by using push_back instead of using += since it's  a vector and not a string. Also updated a few other syntax errors.
+
+commit 351c39bfa838446e69c110cb3888bf8fb9ce8883
+Author: Caitlin Guccione <cguccione1@gmail.com>
+Date:   Fri Dec 1 10:00:42 2017 -0500
+
+    Corrected local variable
+    
+    Created a  local variable called org_data and then eventually added it to the class wide variable data.
+
+commit 65a62579f4c683c6bdd9ee1c7085708edfd5f3a8
+Author: Caitlin Guccione <cguccione1@gmail.com>
+Date:   Fri Dec 1 09:51:02 2017 -0500
+
+    Corrrected exit error
+    
+    Changed exit error so that it would exit cleanly without stopping the program.
+
+commit a66fb7b16180d989d9c3aa3295b41bb1aa1faf01
+Author: Caitlin Guccione <cguccione1@gmail.com>
+Date:   Fri Dec 1 09:47:45 2017 -0500
+
+    Created a main.cpp file
+    
+    Added a main.cpp file
+
+commit fd967ced0a383faea2a8d24acad8d5cb759c5ec5
+Author: Caitlin Guccione <cguccione1@gmail.com>
+Date:   Fri Dec 1 09:28:06 2017 -0500
+
+    Added private section to main
+    
+    Added a private secton to main with data to be processed and parameters into trigFreq
+
+commit ecda617504c3bac16646446b87c2781a6f72adec
+Author: Caitlin Guccione <cguccione1@gmail.com>
+Date:   Fri Dec 1 09:19:58 2017 -0500
+
+    Corrected error with single quotes
+    
+    Changed all single quotes to double quotes since they were holding strings and not characters.
+
+commit d37b0dea614cadfe1ffae914490e07a8fb04a646
+Author: Caitlin Guccione <cguccione1@gmail.com>
+Date:   Wed Nov 29 14:35:07 2017 -0500
+
+    Added trigram.ccp file
+    
+    Made updates to data_freq.h file and created first version of trigram.cpp file
+
+commit bdd9bd770183470f5ec37ec66eb14249b7365536
+Author: Caitlin Guccione <cguccione1@gmail.com>
+Date:   Tue Nov 28 12:41:53 2017 -0500
+
+    Added data_freq.h file
+    
+    This file contains the DF class. The DF class represents the trigram frequencies resulting from the input data.
+
+commit 1ece64d0bb940b2e0dbe802df5b54f49befb7c6a
+Author: Caitlin Guccione <cguccione1@gmail.com>
+Date:   Mon Nov 27 10:08:39 2017 -0500
+
+    Added compile file
+    
+    Created a compile script so final program can eventally run.
+
+commit ea21d6232007fdf16a5077ea7f71a443b5930e30
+Author: Caitlin Guccione <cguccione1@gmail.com>
+Date:   Mon Nov 20 23:12:27 2017 -0500
+
+    Updated git.log
+    
+    Final changes of Desgin Document
+
+commit 3a25c1a03b9cc55108cba5f8a896d431b705833f
+Author: Caitlin Guccione <cguccione1@gmail.com>
+Date:   Mon Nov 20 23:10:54 2017 -0500
+
+    Added libraries and compile detals to Desgin Doucment
+    
+    Added compile details along with final touch ups of desgin document.
+
+commit cc0db10bacbdc206930426ef96d52e7824deb8e6
+Author: Caitlin Guccione <cguccione1@gmail.com>
+Date:   Mon Nov 20 22:56:30 2017 -0500
+
+    Added file and Milestone description
+    
+    Provided details on what will be included in the main() function for milestone 1 and 2
+
+commit 8979dc40252362bbc1d91cf46f0f97618c24c7a4
+Author: Caitlin Guccione <cguccione1@gmail.com>
+Date:   Mon Nov 20 22:37:34 2017 -0500
+
+    Added classes and a SIM function
+    
+    New class and function allow the test and training data to be run efficiently and then compared to identify the correct language.
+
+commit ae8b65870f38612a471f0c1185f71779a3a21de2
+Author: Caitlin Guccione <cguccione1@gmail.com>
+Date:   Mon Nov 20 22:10:03 2017 -0500
+
+    Added Trigram Functions to Desgin Document
+    
+    Added a Data to Trigrams and a Trigrams to Frequency function.
+
+commit f8417a4bbc28a90ed218c260d4621154bf43d94f
+Author: Caitlin Guccione <cguccione1@gmail.com>
+Date:   Mon Nov 20 20:48:29 2017 -0500
+
+    Added Error Correcting to Desgin Document
+    
+    Took into account both the command line and the diffrenet characters that could cause errors later in the program.
+
+commit 7b95910cffa776751bbd330ffe0fca305f22fe76
+Author: Caitlin Guccione <cguccione1@gmail.com>
+Date:   Mon Nov 20 11:29:29 2017 -0500
+
+    Initial commit
