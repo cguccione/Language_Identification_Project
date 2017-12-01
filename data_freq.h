@@ -1,6 +1,5 @@
 #ifndef _data_freq_h
 #define _data_freq_h
-
 #include <iostream>
 #include <string>
 #include <vector>
@@ -45,9 +44,11 @@ public:
 	Take the vector of trigram strings and the outputs their frequencies in 
 	a strings	
 	*/
-	std::string trigFreq();
+	std::string trigFreq(std::vector<std::string> tri_vec);
 
+private:
+	/*Data to be processed*/
+	std::string data;
 };
-
 #endif
 
