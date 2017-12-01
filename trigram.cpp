@@ -39,14 +39,13 @@ std::vector<std::string> DF::dataTrig(){
 		for (int y=0; y<3; y++){
 			temp+=data[x+y];
 		}
-		tri_vec+=temp;
+		tri_vec.push_back(temp);
 	}
 	return tri_vec;
 }
 
 /* Takes the vector of trigram strings and outputs their frequencies in a string */
-std::string DF::tringFreq(){
-	std::vector<std::string> tri_vec;
+std::string DF::trigFreq(std::vector<std::string> tri_vec){
 	std::string freq;
 	std::vector<std::string> test_vec;
 	std::string alpha= " abcdefghijklmnopqrstuvwxyz";
@@ -58,17 +57,18 @@ std::string DF::tringFreq(){
 			for (int q=0; q<27; q++){
 				temp+=alpha[x];
 				temp+=alpha[y];
-				temp+=alpha[z];
-				test_vec+=temp;
+				temp+=alpha[q];
+				//std::cout << temp << std::endl;
+				test_vec.push_back(temp);
 				temp="";
 			} 
 		}	
 	}
 	for (int c=0; c<19683; c++){
 		count=0;
-		for (int u=0; u<((int)(tri_vec.length())); u++){
+		for (int u=0; u<((int)(tri_vec.size())); u++){
 			if (test_vec[c]==tri_vec[u]){
-				count+=1
+				count+=1;
 			}			
 		}
 		freq+=count;
