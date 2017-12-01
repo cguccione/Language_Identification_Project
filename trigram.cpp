@@ -13,13 +13,16 @@ DF::DF(){
 /*If data contains file that is not a lowercase letter (a-z), a space or a new line charcter then
 throws a std::runtime_error
 */
-DF::DF(std:: string data){
-	for (int x=0; x<((int)(data.length())); x++){
-		if(data[x] != tolower(data[x]) && data[x] != ' ' && data[x] != '\n'){
+DF::DF(std::string org_data){
+	for (int x=0; x<((int)(org_data.length())); x++){
+	//	std::cout << org_data[x] << std::endl;
+		
+		if(org_data[x] != tolower(org_data[x]) && org_data[x] != ' ' && org_data[x] != '\n'){
 			//throw std::runtime_error("String contains invalid characters");
 			exit(EXIT_FAILURE);
 		}
 	}
+	data=org_data;
 }
 
 /*Getter Method that grabs the data*/
@@ -29,7 +32,6 @@ std::string DF::getData(){
 
 /*Splits the data into all trigram possiblities and then outputs them into a vector*/
 std::vector<std::string> DF::dataTrig(){
-	std::string data;
 	std::vector<std::string> tri_vec;
 	std::string temp;
 	for (int x=0; x<=(((int)(data.length())-3)); x++){
