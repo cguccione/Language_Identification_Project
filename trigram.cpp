@@ -71,7 +71,8 @@ std::string DF::trigFreq(std::vector<std::string> tri_vec){
 				count+=1;
 			}			
 		}
-		freq+=count;
+		freq+=std::to_string(count);
+		freq+=" ";
 	} 
 	return freq;
 }
