@@ -6,10 +6,7 @@
 
 /*
 A class to reperesent the trigram frequencies resulting from the input data
-A DF object has one member fields: the data, which was orginally inputed,
-
-*****************This is what you want your class to do put is not actually for this header comment
-the trigrams , which
+A DF object has one member fields: the data, which was orginally inputed, the trigrams , which
 is the data split into all the possible groupings of three, and the trigram frequenices which is the 
 number of times that a trigram is present in the orgrinal data set. 
 */
@@ -34,7 +31,6 @@ public:
 	std::string getData();
 
 	/*
-	QUESTION: Do we need to input data for dataTrig
 	Splits the data into all the possible trigram possiblities and then outputs
 	them into a vector.
 	*/

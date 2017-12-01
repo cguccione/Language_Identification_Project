@@ -18,13 +18,12 @@ CPP=clang++
 
 # be aggressive about warnings and errors
 FLAGS="-g -O -Wall -Wextra -Werror -Wfatal-errors -std=c++11 -pedantic"
+#Try with -02 or -03 in later versions
 
-#Try with -02 or -03
 # clear out old object files
 rm -f *.o
 
 # compile
-
 case $link in
   all) $CPP $FLAGS -o frequencies main.cpp trigram.cpp
                   linked=yes ;;
