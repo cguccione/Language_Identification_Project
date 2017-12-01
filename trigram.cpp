@@ -7,7 +7,7 @@
 
 /*Default Constructor*/
 DF::DF(){
-	data ="";
+	data="";
 }
 
 /*If data contains file that is not a lowercase letter (a-z), a space or a new line charcter then
@@ -31,8 +31,8 @@ std::vector<std::string> DF::dataTrig(){
 	std::string data;
 	std::vector<std::string> tri_vec;
 	std::string temp;
-	for (int x=0; x<(((int)(data.length())-3)); x++){
-		temp='';
+	for (int x=0; x<=(((int)(data.length())-3)); x++){
+		temp="";
 		for (int y=0; y<3; y++){
 			temp+=data[x+y];
 		}
@@ -46,9 +46,9 @@ std::string DF::tringFreq(){
 	std::vector<std::string> tri_vec;
 	std::string freq;
 	std::vector<std::string> test_vec;
-	std::string alpha= " abcdefghijklmnopqrstuvwxyz"
-	std::string temp='';
-	std::int count;
+	std::string alpha= " abcdefghijklmnopqrstuvwxyz";
+	std::string temp="";
+	int count;
 	//Creates a generic vector of trigram frequinces that we can compare too
 	for (int x=0; x<27; x++){
 		for (int y=0; y<27; y++){
@@ -57,7 +57,7 @@ std::string DF::tringFreq(){
 				temp+=alpha[y];
 				temp+=alpha[z];
 				test_vec+=temp;
-				temp=''
+				temp="";
 			} 
 		}	
 	}
