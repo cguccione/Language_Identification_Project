@@ -16,7 +16,8 @@ throws a std::runtime_error
 DF::DF(std:: string data){
 	for (int x=0; x<((int)(data.length())); x++){
 		if(data[x] != tolower(data[x]) && data[x] != ' ' && data[x] != '\n'){
-			std::runtime_error("String contains invalid characters");
+			//throw std::runtime_error("String contains invalid characters");
+			exit(EXIT_FAILURE);
 		}
 	}
 }
