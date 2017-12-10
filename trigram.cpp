@@ -26,19 +26,32 @@ std::string DF::getData(){
 	return data;
 }
 
-/*Splits the data into all trigram possiblities and then outputs them into a vector*/
-std::vector<std::string> DF::dataTrig(){
-	std::vector<std::string> tri_vec;
-	std::string temp;
-	//Breaks the data into sets of three or trigrams and then adds these to tri_vec
+/*Splits the data into all trigram possiblities and then turns each trigram into an element
+and outputs these elements into a vector */
+std::vector<int> DF::dataElements(){
+//	std::cout << "here3" << std::endl;
+	std::vector<int> vec_of_ele;
+	std::string temp_tri;
+	std::string alpha= " abcdefghijklmnopqrstuvwxyz";
+	int temp_num;
+	//Breaks the data into sets of three or trigrams and adds them to temp_tri 
 	for (int x=0; x<=(((int)(data.length())-3)); x++){
-		temp="";
+		temp_tri="";
+		temp_num=0;
 		for (int y=0; y<3; y++){
-			temp+=data[x+y];
+			temp_tri+=data[x+y];
 		}
-		tri_vec.push_back(temp);
+		//Goes through each letter in temp_tri and converts it to an element
+		for (int z=0; z<3; z++){
+			for (int c=0; c<27; c++){
+				if (temp_tri[z] == alpha[c]){
+					temp_num += c*(pow (27.0, (2-z)));
+				}
+			}
+		}
+		vec_of_ele.push_back((int)temp_num);
 	}
-	return tri_vec;
+	return vec_of_ele;
 }
 
 /* Takes the vector of trigram strings and outputs their frequencies in a string */
