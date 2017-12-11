@@ -58,35 +58,26 @@ int main(int argc, char *argv[]){
 		DF lang =DF(training_data[x]);
 		std::string lang_out = lang.getData();
 		std::vector<int> vec_of_ele = lang.dataElements();
-		double top =0;
 		double b1 =0;
 		double b2=0;
 		double ab1=0;
 		double ab2=0;
-		int small_size=0;
-		if ((int) vec_of_ele.size() < (int) test_vec_of_ele.size()){
-			small_size= vec_of_ele.size();
-		}
-		else {
-			small_size=test_vec_of_ele.size();
-		}
-		for (int i=0; i<(small_size -1); i++){
 	//		std::cout << test_vec_of_ele[37875974] << std::endl;
 			top+=(vec_of_ele[i] * test_vec_of_ele[i]);
 		}	
 	//	std::cout << vec_of_ele[(int)vec_of_ele.size() -2] << std::endl;
 	//	std::cout << test_vec_of_ele[(int) vec_of_ele.size() -2] << std::endl;
 //		std::cout << "here3" << std::endl;
-		for (int i=0; i<((int)vec_of_ele.size()-1); i++){
-			ab1+=(vec_of_ele[i])*(vec_of_ele[i]);
+		for (int i=0; i<((int)vec_of_ele.size()); i++){
+			ab1+=((vec_of_ele[i])*(vec_of_ele[i]));
 		}
 		b1=sqrt(ab1);
-		for (int i=0; i<((int)test_vec_of_ele.size()-1); i++){
-			ab2+=(test_vec_of_ele[i])*(test_vec_of_ele[i]);
+		for (int i=0; i<((int)test_vec_of_ele.size()); i++){
+			ab2+=((test_vec_of_ele[i])*(test_vec_of_ele[i]));
 		}
 		b2=sqrt(ab2);
-		double similarity= top/(b1*b2);
 		std::cout << similarity << std::endl;
+		double similarity=((top)/(b1*b2));
 		if (most_sim < similarity){
 			most_sim= similarity;
 			most_sim_count=sim_count;
