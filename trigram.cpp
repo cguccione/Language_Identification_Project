@@ -30,7 +30,7 @@ std::string DF::getData(){
 and outputs these elements into a vector */
 std::vector<int> DF::dataElements(){
 //	std::cout << "here3" << std::endl;
-	std::vector<int> vec_of_ele;
+	std::vector<int> frequinces(19683);
 	std::string temp_tri;
 	std::string alpha= " abcdefghijklmnopqrstuvwxyz";
 	int temp_num;
@@ -49,9 +49,9 @@ std::vector<int> DF::dataElements(){
 				}
 			}
 		}
-		vec_of_ele.push_back((int)temp_num);
+		frequinces [temp_num]+=1;	
 	}
-	return vec_of_ele;
+	return frequinces;
 }
 
 /* Takes the vector of trigram strings and outputs their frequencies in a string */
