@@ -31,16 +31,16 @@ public:
 	std::string getData();
 
 	/*
-	Splits the data into all the possible trigram possiblities and then outputs
-	them into a vector.
+	Splits the data into all the possible trigram possiblities then converts them to elements and then outputs
+	them into a vector full of numbers.
 	*/
-	std::vector<std::string> dataTrig();
+	std::vector<int> dataElements();
 	
-	/*
+	/*Milestone 1 only...
 	Take the vector of trigram strings and the outputs their frequencies in 
 	a strings	
-	*/
 	std::string trigFreq(std::vector<std::string> tri_vec);
+	*/
 
 private:
 	/*Data to be processed*/
