@@ -58,11 +58,13 @@ int main(int argc, char *argv[]){
 		DF lang =DF(training_data[x]);
 		std::string lang_out = lang.getData();
 		std::vector<int> vec_of_ele = lang.dataElements();
+		long long top =0;
 		double b1 =0;
 		double b2=0;
-		double ab1=0;
-		double ab2=0;
 	//		std::cout << test_vec_of_ele[37875974] << std::endl;
+		long long ab1=0;
+		long long ab2=0;
+		for (int i=0; i<((int)vec_of_ele.size()); i++){
 			top+=(vec_of_ele[i] * test_vec_of_ele[i]);
 		}	
 	//	std::cout << vec_of_ele[(int)vec_of_ele.size() -2] << std::endl;
@@ -76,7 +78,6 @@ int main(int argc, char *argv[]){
 			ab2+=((test_vec_of_ele[i])*(test_vec_of_ele[i]));
 		}
 		b2=sqrt(ab2);
-		std::cout << similarity << std::endl;
 		double similarity=((top)/(b1*b2));
 		if (most_sim < similarity){
 			most_sim= similarity;
