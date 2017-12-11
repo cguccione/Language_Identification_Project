@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ######################################################
-#   Compiles trigram.cpp into the excutable trigram  #
+#   Compiles trigram.cpp into the excutable language  #
 ######################################################
 
 set -e    # halt on first error
@@ -16,9 +16,8 @@ esac
 # use 'clang++' as the compiler
 CPP=clang++
 
-# be aggressive about warnings and errors
+# adds the apropriate flags to compile the file
 FLAGS="-g -O -Wall -Wextra -Werror -Wfatal-errors -std=c++11 -pedantic"
-#Try with -02 or -03 in later versions
 
 # clear out old object files
 rm -f *.o

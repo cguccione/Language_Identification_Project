@@ -29,6 +29,7 @@ int main(int argc, char *argv[]){
 			exit(EXIT_FAILURE);
 		}
 		else{
+			//Creates a object of the test data which then returns a test_vec_of_ele vector
 			if (i == (argc-1)){
 				ifstream inFile;
 				inFile.open(argv[i]);
@@ -39,6 +40,7 @@ int main(int argc, char *argv[]){
 				std::string test_lang_out = test_lang.getData();
 				test_vec_of_ele = test_lang.dataElements();
 			}
+			//Places all the trainning data into vector that is used later in the program
 			else {
 				ifstream inFile;
 				inFile.open(argv[i]);
@@ -50,26 +52,31 @@ int main(int argc, char *argv[]){
 		}
 	}
 
-	//Makes the data input into a DF object
+	//Sets counting variable to find the most similar set of data
 	double most_sim =0;
 	int sim_count =1;
 	int most_sim_count=1;
+	
+	//Loops through the vector of tranning data and tests each lanuage
 	for (int x=0; x<((int) training_data.size()); x++){
+
+		//Creates an object for the lanuage and outputs the a vector
+		//with it's element values
 		DF lang =DF(training_data[x]);
 		std::string lang_out = lang.getData();
 		std::vector<int> vec_of_ele = lang.dataElements();
+
+		//Sets all the variables used to calculte the cos similarity
 		long long top =0;
 		double b1 =0;
 		double b2=0;
-	//		std::cout << test_vec_of_ele[37875974] << std::endl;
 		long long ab1=0;
 		long long ab2=0;
+
+		//Calculates the cos similarity equation
 		for (int i=0; i<((int)vec_of_ele.size()); i++){
 			top+=(vec_of_ele[i] * test_vec_of_ele[i]);
 		}	
-	//	std::cout << vec_of_ele[(int)vec_of_ele.size() -2] << std::endl;
-	//	std::cout << test_vec_of_ele[(int) vec_of_ele.size() -2] << std::endl;
-//		std::cout << "here3" << std::endl;
 		for (int i=0; i<((int)vec_of_ele.size()); i++){
 			ab1+=((vec_of_ele[i])*(vec_of_ele[i]));
 		}
@@ -79,12 +86,15 @@ int main(int argc, char *argv[]){
 		}
 		b2=sqrt(ab2);
 		double similarity=((top)/(b1*b2));
+
+		//Compares the similarity of the vectors and corrects the vector if needed	
 		if (most_sim < similarity){
 			most_sim= similarity;
 			most_sim_count=sim_count;
 		}
 		sim_count+=1;
 	}
-//	std::cout << most_sim_count << std::endl;
+
+	//Outputs the final language to the screen 
 	std::cout << argv[most_sim_count] << std::endl;
 }
